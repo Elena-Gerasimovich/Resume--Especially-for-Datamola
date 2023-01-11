@@ -1,9 +1,10 @@
 :root{
     --textColor: #242424;
+    --textColorLight: #fff;
     --textColorSelection: #242424;
 
-    --siteColorDark: #6b7181;
-    --siteColorLight: #ffc5c1;
+    --siteColorDark: #3e465c;
+    --siteColorLight: #f3dfd7;
     --siteColorBasic: #fff;
 
     --shadowColor: #252525;
@@ -71,9 +72,9 @@ body {
 }
 
 .wrapper{
-    height: 100%;
-    background: -webkit-linear-gradient(-75deg, var(--siteColorDark) 35%, var(--siteColorLight) 75%) fixed;
-    background-size: 100%;
+
+    background-image: linear-gradient(-28deg, var(--siteColorLight) 6%, var(--siteColorDark) 61%);
+    background-attachment: fixed;
 }
 
 .container {
@@ -86,7 +87,7 @@ body {
     position: relative;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1229px) {
     .container {
         width: 100%;
     }
@@ -149,24 +150,70 @@ footer{
 
 /*-----------------------------------------------*/
 
-.slider_wrapper{
-    width: 1000px;
-    height: 500px;
+.slider--wrapper{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.slider--wrapper>hr{
+    border-bottom: 4px solid var(--siteColorDark);
+    margin: 73px 10px;
 }
 
 .slider-slide img {
     /*display: none;*/
     object-fit: cover;
-    border-radius: 120px;
+    border-radius: 75px;
     border: 5px solid var(--siteColorDark);
-    margin: auto;
-
+    margin: 0 auto;
+    max-height: 100%;
+    min-width: 40px;
+    height: auto;
 }
+
+.slider-slide{
+    position: absolute;
+    top: 0;
+    left: 42px;
+    margin: 0 5px;
+    width: calc(33% - (50px/3));
+    height: inherit;
+}
+
 
 .block {
     display: block;
-    object-fit: cover;
-    width: 150px;
-    height: auto;
 }
+
+[class^="slider--pointer"]{
+    position: absolute;
+    top: 55px;
+    border-radius: 20px;
+    background-color: var(--siteColorDark);
+    height: 40px;
+    width: 40px;
+}
+
+[class^="slider--pointer"]>svg{
+    height: 32px;
+    width: 32px;
+    fill: var(--siteColorBasic);
+    top: 4px;
+    left: 4px;
+
+}
+
+.slider--pointer-left{
+    left: 0;
+}
+
+.slider--pointer-right{
+    right: 0;
+}
+
+
 
