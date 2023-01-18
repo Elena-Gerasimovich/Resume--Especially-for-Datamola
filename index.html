@@ -11,55 +11,92 @@
 <body>
 
 <div class="wrapper">
-
     <div class="container">
-        <header>
-            <h1>Елена Герасимович</h1>
-            <p>Web-разработчик. Стажер</p>
+
+        <header class="header--title-color header--col">
+            <div class="header--content">
+                <h1>Елена Герасимович</h1>
+                <p>Web-разработчик. Стажер</p>
+            </div>
         </header>
-        <aside class="aside-col">
-            <div class="aside-myPhoto">
+
+        <aside class="aside--col">
+
+            <div class="aside--myPhoto-col">
                 <img src="img/myPhoto.jpg" alt="Photo Elena Gerasimovich ">
             </div>
-            <section class="aside-personal">
+
+            <section class="aside--personal">
                 <h3>Мои данные</h3>
-                <hr>
+                <hr class="aside--hr">
                 <ul>
-                    <li><p><span>ФИО</span> Герасимович Елена Александровна</p></li>
-                    <li><p><span>Телефон:</span><a href="tel:+375293796090"> +375(29)379-60-90</a></p></li>
-                    <li><p><span>E-mail:</span><a href="mailto:8.Lisi4ka.8@gmail.com"> 8.Lisi4ka.8@gmail.com</a></p></li>
-                    <li><p><span>GitHub:</span><a href="https://github.com/Elena-Gerasimovich"> https://github.com/Elena-Gerasimovich</a></p></li>
+                    <li><p><span class="resume--text-small">ФИО: </span><span>Герасимович Елена Александровна</span></p></li>
+                    <li><p><span class="resume--text-small">Телефон: </span><a href="tel:+375293796090"> +375(29)379-60-90</a></p></li>
+                    <li><p><span class="resume--text-small">E-mail: </span><a href="mailto:8.Lisi4ka.8@gmail.com"> 8.Lisi4ka.8@gmail.com</a></p></li>
+                    <li><p><span class="resume--text-small">GitHub: </span><a href="https://github.com/Elena-Gerasimovich"> https://github.com/Elena-Gerasimovich</a></p></li>
                 </ul>
             </section>
-            <section class="aside-skills">
+
+            <section class="aside--skills">
                 <h3>Skill's</h3>
-                <hr>
-                <form action="">
-                    <label>HTML <progress max="10" value="9.3">93%</progress><br></label>
-                    <label>CSS/SASS <progress max="10" value="9.3">93%</progress><br></label>
-                    <label>Java Script <progress max="10" value="3">30%</progress><br></label>
-                    <label>jQuery <progress max="10" value="1">10%</progress><br></label>
-                    <label>TypeScript <progress max="10" value="1">10%</progress><br></label>
-                    <label>Angular/Node/Vue <progress max="10" value="0.5">5%</progress><br></label>
-                    <label>Gulp <progress max="10" value="5">50%</progress><br></label>
-                    <label>PHP <progress max="10" value="3">30%</progress><br></label>
-                    <label>Vii <progress max="10" value="1.5">15%</progress><br></label>
-                    <label>mSQL <progress max="10" value="2">20%</progress></label>
+                <hr class="aside--hr">
+                <form action="#" class="aside--skills-col">
+                    <div class="aside--skills-row">
+                        <label>HTML </label>
+                        <progress max="10" value="9.3">93%</progress>
+                    </div>
+                    <div class="aside--skills-row">
+                        <label>CSS/SASS </label>
+                        <progress max="10" value="9.3">93%</progress>
+                    </div>
+                    <div class="aside--skills-row">
+                        <label>Java Script </label>
+                        <progress max="10" value="3">30%</progress>
+                    </div>
+                    <div class="aside--skills-row">
+                        <label>TypeScript </label>
+                        <progress max="10" value="1">10%</progress>
+                    </div>
+                    <div class="aside--skills-row">
+                        <label>Angular </label>
+                        <progress max="10" value="0.5">5%</progress>
+                    </div>
+                    <div class="aside--skills-row">
+                        <label>Gulp </label>
+                        <progress max="10" value="5">50%</progress>
+                    </div>
+                    <div class="aside--skills-row">
+                        <label>PHP </label>
+                        <progress max="10" value="3">30%</progress>
+                    </div>
+                    <div class="aside--skills-row">
+                        <label>Vii </label>
+                        <progress max="10" value="1">10%</progress>
+                    </div>
+                    <div class="aside--skills-row">
+                        <label>mSQL </label>
+                        <progress max="10" value="2">20%</progress>
+                    </div>
                 </form>
             </section>
-            <section class="aside-follow">
+
+            <section class="aside--follow">
                 <h3>Ссылки</h3>
-                <hr>
+                <hr class="aside--hr">
                 <ul>
                     <li><a href="https://linkedin.com/in/елена-герасимович-a990a2161">Linkedin</a></li>
                     <li><a href="https://github.com/Elena-Gerasimovich">GitHub</a></li>
                     <li><a href="https://rabota.by/resume/ab7f88ddff07eef2510039ed1f535a686d6453">Rabota.by</a></li>
                 </ul>
             </section>
+
         </aside>
-        <main class="resume-col">
+
+        <main class="resume--col">
             <article>
-                <h2>Обо мне</h2>
+                <div class="resume--title-color">
+                    <h3>Обо мне</h3>
+                </div>
                 <p> Еще в школе интересовалась программированием и начала изучать язык программирования "С".
                     После школы пошла работать помощником кинорежиссера (так получилось).
                     На работе зарекомендовала себя как ответственный и надежный сотрудник.
@@ -69,72 +106,79 @@
                     к примеру сайт для приглашения и подбора массовки, автоматизированную рассылку сообщений актерам и тому подобное.
                     Постепенно стала замечать что недостаток современных технологий коснулся и других специалистов.
                     Тогда я решилась сменить вид своей деятельности и окончить курсы Web-разработки.
-                    Но ненормированный график и нестабильный доход вынудил покинуть работу на Киностудии и искать другую.
                 </p>
-                <p>
-                    Пока опыта работы в сфере Web-разработки у меня мало, но есть непреодолимое желание развиваться именно в этом направлении.
-                    В каждом сайте вижу что-то что можно улучшить. Знаю что этим я смогу сделать проще и удобнее жизнь разных людей.
+                <p> Пока опыта работы в сфере Web-разработки у меня мало, но есть непреодолимое желание развиваться именно в этом направлении.
+                    Самостоятельно сверстала 1 сайт. Сейчас повторяю и углубляю знания Java Script.
+                    На очереди Type Script, jQuery и один из фреймворков.
+                    Как только справлюсь с этим, буду стремиться подключить к этому уже приобретенные на курсах знания по PHP и MySQL.
                 </p>
             </article>
+
             <article>
-                <h2>Образование</h2>
-                <p><span>Уровень: </span>Среднее образование</p>
-                <h3>Повышение квалификации, курсы</h3>
-                <p><span>2020</span><span class="bold">WEB-разработка</span></p>
-                <p>OOO"АйтиШагПро" - "Компьютерная Академия "Шаг", Разработка и продвижение Web-проектов</p>
-                <p><span>2006</span><span class="bold">Программирование на языке C</span></p>
-                <p>"Белхард"</p>
+                <div class="resume--title-color">
+                    <h3>Образование</h3>
+                </div>
+                <p><span class="resume--text-small">Уровень: </span>Среднее образование</p>
+                <h4 class="resume--subtitle">Повышение квалификации, курсы</h4>
+                <p><span class="resume--text-small">Курсы: </span><span class="resume--text-bold">WEB-разработка. Full Stack (HTML, CSS, JS, jQuery, PHP, Yii, mySQL)</span></p>
+                <p>OOO"АйтиШагПро" - "Компьютерная Академия "Шаг"</p>
+                <hr class="resume--hr-small">
+                <p><span class="resume--text-small">Курсы: </span><span class="resume--text-bold">Программирование на языке "C"</span></p>
+                <p>Академия "BelHard"</p>
             </article>
+
             <article>
-                <h2>Опыт работы</h2>
-                <article>
-                    <h3>Торговый агент</h3>
-                    <p class="company">ТК "Ромакс"</p>
-                    <p class="date">Июль 2020 — настоящее время
-                        2 года 7 месяцев
+                <div class="resume--title-color">
+                    <h3>Опыт работы</h3>
+                </div>
+                <div>
+                    <h3>Самостоятельная стажировка</h3>
+                    <p><span class="resume--text-small"> C сентября 2022 по настоящее время </span></p>
+                    <p> Востановление и углубление приобретенных на курсах знаний + самостоятельная практика.
+                        <a href="https://github.com/Elena-Gerasimovich">Все успехи будут тут &rArr; GitHub.</a>
                     </p>
-                    <p>Разъездная работа. Выкладка и наличие товара в магазинах. </p>
-                </article>
-                <article>
-                    <h3>Продавец-консультант</h3>
-                    <p class="company"></p>
-                    <p class="date">Июнь 2019 — Март 2020
-                        10 месяцев
-                    </p>
-                    <p>Продажа входных и межкомнатных дверей.</p>
-                </article>
-                <article>
-                    <h3>Мерчендайзер</h3>
-                    <p class="company">"Алиди-Вест"</p>
-                    <p class="date">Октябрь 2018 — Апрель 2019
-                        7 месяцев
-                    </p>
+                </div>
+                <hr class="resume--hr-small">
+                <div>
+                    <h3>Торговый агент. ТК "Ромакс"</h3>
+                    <p><span class="resume--text-small"> C июля 2020  по сентябрь 2022 - 2 года </span></p>
+                    <p>Разъездная работа. Проверка выкладки и наличии товара бренда "L'oreal" в магазинах. </p>
+                </div>
+                <hr class="resume--hr-small">
+                <div>
+                    <h3>Продавец-консультант. ОАО "БелЛесИзделие"</h3>
+                    <p><span class="resume--text-small"> С июня 2019 по март 2020 - 10 месяцев </span></p>
+                    <p>Продажа входных и межкомнатных дверей под торговой маркой "BelWoodDoors".</p>
+                </div>
+                <hr class="resume--hr-small">
+                <div>
+                    <h3>Мерчендайзер. ТК "Алиди-Вест"</h3>
+                    <p><span class="resume--text-small"> С октября 2018 по апрель 2019 - 7 месяцев </span></p>
                     <p>Разъездная работа. Выкладка товара на полках магазинов. </p>
-                </article>
-                <article>
-                    <h3>Продавец-консультант</h3>
-                    <p class="company">ООО "Астомстрой"</p>
-                    <p class="date">Октябрь 2015 — Сентябрь 2018
-                        3 года
-                    </p>
-                    <p>Работа продавца.</p>
-                </article>
-                <article>
-                    <h3>Ассистент кинорежиссера</h3>
-                    <p class="company">Киностудия "Беларусьфильм"</p>
-                    <p class="date">Апрель 2008 — Апрель 2015
-                        7 лет 1 месяц
-                    </p>
+                </div>
+                <hr class="resume--hr-small">
+                <div>
+                    <h3>Продавец-консультант. ООО "Астомстрой"</h3>
+                    <p><span class="resume--text-small"> С октября 2015 по сентябрь 2018 - 3 года </span></p>
+                    <p>Работа продавца в строительном гипермаркете "Новоселкин"/"MILE".</p>
+                </div>
+                <hr class="resume--hr-small">
+                <div>
+                    <h3>Ассистент кинорежиссера. РУП "Национальная киностудия "Беларусьфильм"</h3>
+                    <p><span class="resume--text-small"> С апреля 2008 по апрель 2015 - 7 лет 1 месяц </span></p>
                     <p>Работала в составе разных съемочных групп.
-                        Карьерный рост от помощника кинорежиссера по регистрации договоров массовки до ассистента кинорежиссера по подбору актеров и ведения базы участников съемок.
+                        Карьерный рост от помощника кинорежиссера по регистрации договоров массовки
+                        до ассистента кинорежиссера по подбору актеров и ведения базы участников съемок.
                     </p>
-                </article>
+                </div>
             </article>
         </main>
-        <footer>
-            <h2>Хобби</h2>
-            <div class="slider--wrapper">
 
+        <footer class="footer--col">
+            <div class="resume--title-color">
+                <h3>Хобби</h3>
+            </div>
+            <div class="slider--wrapper">
                 <input checked type=radio name="slider" id="slide1"/>
                 <input type=radio name="slider" id="slide2"/>
                 <input type=radio name="slider" id="slide3"/>
@@ -144,12 +188,8 @@
                 <input type=radio name="slider" id="slide7"/>
                 <input type=radio name="slider" id="slide8"/>
 
-
-
-
                 <div class="slider--carousel-wrapper">
                     <div class="slider--carousel">
-
                         <div class="slider--slide">
                             <img src="img/slider1.webp" alt="slider1">
                         </div>
@@ -180,42 +220,57 @@
                         <div class="slider--slide">
                             <img src="img/slider10.webp" alt="slider10">
                         </div>
-
                     </div>
                 </div>
 
-
-
                 <div class="slider--pointer">
-                    <label for=slide1></label>
-                    <label for=slide2></label>
-                    <label for=slide3></label>
-                    <label for=slide4></label>
-                    <label for=slide5></label>
-                    <label for=slide6></label>
-                    <label for=slide7></label>
-                    <label for=slide8></label>
+                    <label for=slide1>
+                        <svg class="">
+                            <use xlink:href="img/pointer1.svg#pointer"></use>
+                        </svg>
+                    </label>
+                    <label for=slide2>
+                        <svg class="">
+                            <use xlink:href="img/pointer1.svg#pointer"></use>
+                        </svg>
+                    </label>
+                    <label for=slide3>
+                        <svg class="">
+                            <use xlink:href="img/pointer1.svg#pointer"></use>
+                        </svg>
+                    </label>
+                    <label for=slide4>
+                        <svg class="">
+                            <use xlink:href="img/pointer1.svg#pointer"></use>
+                        </svg>
+                    </label>
+                    <label for=slide5>
+                        <svg class="">
+                            <use xlink:href="img/pointer1.svg#pointer"></use>
+                        </svg>
+                    </label>
+                    <label for=slide6>
+                        <svg class="">
+                            <use xlink:href="img/pointer1.svg#pointer"></use>
+                        </svg>
+                    </label>
+                    <label for=slide7>
+                        <svg class="">
+                            <use xlink:href="img/pointer1.svg#pointer"></use>
+                        </svg>
+                    </label>
+                    <label for=slide8>
+                        <svg class="">
+                            <use xlink:href="img/pointer1.svg#pointer"></use>
+                        </svg>
+                    </label>
                 </div>
 
-
-                <!--
-                    <svg class="">
-                        <use xlink:href="img/pointer1.svg#pointer"></use>
-                    </svg>
-
-          -->
-
                 <hr>
-
             </div>
-
         </footer>
+
     </div>
-
 </div>
-
-
-
-<script src="js/script.js"></script>
 </body>
 </html>
